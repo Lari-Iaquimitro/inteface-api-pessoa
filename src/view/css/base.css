@@ -9,7 +9,7 @@
 
 body{
     background-color: #fbebec;
-    font-family: 'Newsreader', 'serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-family: 'Newsreader', 'serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' !important ;
 }
 .cabecalho{
     display: flex;
@@ -22,6 +22,8 @@ body{
 h1{
     margin: auto;
     color: var(--cor1);
+    margin-left: 325px;
+    margin-bottom: 15px;
 }
 
 .geral{
@@ -33,6 +35,7 @@ h1{
     width: 80vw;
     margin: 10px;
     margin-left: 10vw;
+    border-radius: 20px;
 
     background-color: var(--cor1);
     color: var(--cor2);
@@ -74,9 +77,18 @@ input{
     width: 32vw;
 }
 button{
-    width: 10vw;
     background-color: var(--cor2);
     color: var(--cor1);
-    font-size: 30px ;
+    font-size: 25px ;
     border-radius: 30px;
+}
+
+.nav{
+    background-color: var(--cor1) !important;
+    color: var(--cor2) !important;
+}   
+.nav-link{
+    background-color: var(--cor1) !important;
+    color: var(--cor2) !important;
+    border-radius: 2px ;
 }
