@@ -34,4 +34,14 @@ function cadastrar() {
           console.error('Erro ao enviar dados para o servidor:', error);
           // Trate os erros, se necessário
       });
+
+}
+
+function listarPessoas() {
+    fetch(`${url_server}/pessoas`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+        });
 }
