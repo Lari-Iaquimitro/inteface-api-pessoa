@@ -35,7 +35,7 @@
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                 
-                <div class="cabecalho">
+                <form class="cabecalho">
                     <img src="../../Documentos/logo.png" width="120vw" height="100vh">
                     <h1>Cadastro de Pessoas</h1>
                 </div>
@@ -44,40 +44,40 @@
                     <div class="l">
                         <div class="cad">
                             <h2>Nome:</h2>
-                            <input type="text" name="nome-pessoa" placeholder=" Nome Completo:" class="nome">
+                            <input type="text" name="nome-pessoa" placeholder=" Nome Completo:" class="nome" required minlength="5" maxlength="100">
                         </div>
                         <div class="cad">
                             <h3>CPF:</h3>
-                            <input type="text" name="cpf" placeholder=" 000.000.000-00" class="cpf">
+                            <input type="text" name="cpf" placeholder=" 000.000.000-00" class="cpf" required minlength="11" maxlength="14">
                         </div>
                     </div>
                     <div class="l">
                         <div class="cad">
                             <h3>Data de Nascimento:</h3>
-                            <input type="date" name="data-de-nascimento" placeholder=" dd/mm/aaaa" class="data">
+                            <input type="date" name="data-de-nascimento" placeholder=" dd/mm/aaaa" class="data" required>
                         </div>
                         <div class="cad">
                             <h3>Telefone:</h3>
-                            <input type="tel" name="telefone" placeholder=" (00)0000-0000" class="tel">
+                            <input type="tel" name="telefone" placeholder="(00)0000-0000" class="tel" required minlength="10" maxlength="19">
                         </div>
                     </div>
     
                     <div class="l">
                         <div class="cad">
                             <h3>Endereço:</h3>
-                            <input type="text" name="endereco" placeholder=" Endereço completo" class="end">
+                            <input type="text" name="endereco" placeholder=" Endereço completo" class="end" required minlength="3" maxlength="80">
                         </div>
                     </div>
     
                     <div class="l">
                         <div class="cad">
                             <h3>Peso:</h3>
-                            <input type="number" name="peso" placeholder=" 00.0kg" class="peso">
+                            <input type="number" name="peso" placeholder=" 00.0kg" class="peso" required minlength="1" maxlength="3">
                         </div>
     
                         <div class="cad">
                             <h3>Altura:</h3>
-                            <input type="number" name="altura" placeholder=" 000cm" class="alt">
+                            <input type="number" name="altura" placeholder=" 000cm" class="alt" required minlength="2" maxlength="3">
                         </div>
     
                     </div>
@@ -85,7 +85,7 @@
                         <button class="botao" onclick="cadastrar()">Cadastrar</button>
                     </div>
                 </div>
-            </div>
+            </form>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
 
                 <button onclick="listarPessoas()">Listar pessoas</button>
